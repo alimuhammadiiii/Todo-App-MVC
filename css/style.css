@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(34, 41, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.body-box::-webkit-scrollbar {
+  width: 5px;
+}
+
+.body-box::-webkit-scrollbar-thumb {
+  background-color: white;
+  outline: 1px solid slategrey;
+}
+
+h1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#root {
+  max-width: 572px;
+  width: 100%;
+  text-align: center;
+  padding: 18px;
+  margin-bottom: 18px;
+  box-shadow: 0px 0px 21px #ffffff1c;
+}
+
+.container {
+  background-color: rgb(34, 41, 41);
+  height: 600px;
+  max-width: 700px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.todo-input {
+  width: 320px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  padding: 5px;
+  outline: none;
+}
+
+.add-todo {
+  background-color: #fff;
+  font-size: 20px;
+  height: 40px;
+  width: 50px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+}
+
+.add-todo:hover {
+  cursor: pointer;
+  background-color: rgb(54, 51, 53);
+  color: lightgray;
+}
+
+.body-box {
+  height: 450px;
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 8px;
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list {
+  background-color: rgb(34, 41, 41);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.todo-li {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.todo-li button {
+  cursor: pointer;
+  color: lightgray;
+  vertical-align: middle;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 3px;
+  width: 50px;
+}
+
+.text-todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  list-style-type: none;
+  flex: 1;
+  padding-left: 5px;
+  height: 30px;
+  width: 230px;
+  overflow: hidden;
+  outline: none;
+}
+
+.todo-done {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.remove,
+.done,
+.edited {
+  pointer-events: none;
+}
+
+.todo-filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 400px;
+}
+
+.todo-filter button {
+  flex-grow: 1;
+  margin-left: 5px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.todo-filter button:hover {
+  color: #fff;
+  background-color: rgb(34, 41, 41);
+}
